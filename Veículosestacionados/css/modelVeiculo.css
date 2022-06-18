@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#modalVeiculo{
+    width: 100%;
+    height: 143%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    background-color: #e3e3e3de;
+    visibility: hidden; 
+    z-index: -1;
+}
+
+#modalVeiculo.active{
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s;
+}
+
+#todamodel{
+    width: 90%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    visibility: hidden; 
+    
+    
+}
+
+#todamodel.active{
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s;
+    background-color: #ffffff; 
+}
+
+.closemodal{
+    cursor: pointer;
+}
+
+#modalpreco .active{
+    visibility: visible;
+    z-index: 1;
+    position: absolute;
+    transition: 0.4s;
+   
+
+}
+
+
+.titlle_x{
+    width: 100%;
+    height: 100px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -200px;
+
+}
+
+.containermodel{
+    position: relative;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+
+}
+
+.containermodel input,select{
+    width: 80%;
+    height: 1.7rem;
+    background-color: #E3E3E3;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 5px;
+}
+
+.cliente{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 30px;
+}
+
+.cliente h3{
+    width: 100%;
+    height: 60%;
+   
+}
+
+.inputnome{
+    width: 100%;
+    display: flex;
+    gap: 100px;
+ 
+    
+}
+
+.inputnome input{
+    width:400px;
+    
+    
+}
+
+.inf_span{
+    display: flex;
+    flex-direction: column;
+}
+
+.inf_span .inputmenor{
+    width: 90%;
+ 
+}
+
+#registrarsaida{
+    width: 150px;
+    background-color: transparent;
+    border: double;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.button{
+    border-style: none;
+    height: 30px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+    border-radius: 5px 5px 5px ;
+    
+}
+
+.button.blue{
+    background-color: #1FB6FF;
+}
+
+/* parte pra alinhar os botoes */
+button.green{
+    background-color: #13CE66;
+    margin-left: 13%;
+}
+
+button.red{
+    background-color: #FF4949;
+}
+
+.button:hover{
+    box-shadow: inset 200px 0 0 #00000055;
+}

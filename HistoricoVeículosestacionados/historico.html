@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/historicoVeiculo.css">
+    <link rel="stylesheet" href="../menulateral/cssMenu/menuLateral.css">
+    <link rel="stylesheet" href="css/modelVeiculo.css">
+    <link rel="shortcut icon" href="../menulateral/img/logoFast.png" type="image/x-icon">
+    <script src="js/modelJS.js" defer type="module"></script>
+    <script src="js/ApiHVeiculos.js" defer type="module"></script>
+    <title>Historico de Veiculos</title>
+</head>
+<body>
+    <main>
+        <section id="menuFt">
+            <nav>
+                <img id="logoFast" src="img/logoFast.png" alt="">
+                <ul>
+                    <li>
+                       
+                        <a href="../CadastramentoDeVagas/index.html" id="icon" title="Cadastramento de Vagas"><img
+                            src="../menulateral/img/seguro-de-automovel.png" alt=""></a>
+                    <a href="../CadastroCliente/cadastroCliente.html" title="Cadastramento de Clientes"><img
+                            src="../menulateral/img/CadastramentoCliente.png" alt=""></a>
+                    <a href="../Cores/Cores.html" title="Cores"><img src="../menulateral/img/cores.png" alt=""></a>
+                    <a href="../HistoricoVeículosestacionados/historico.html"
+                        title="Historico de Veiculos Estacionados"><img
+                            src="../menulateral/img/HistoricoVeiculos.png" alt=""></a>
+                    <a href="../Preco/preco.html" title="Cadastramento de preços"><img
+                            src="../menulateral/img/CadastramentoPreços.png" alt=""></a>
+                    <a href="../TipoVeiculo/TipoVeiculo.html" title="Tipo de Veiculo"><img
+                            src="../menulateral/img/TipoVeiculo.png" alt=""></a>
+                    <a href="../Veículosestacionados/VeiculosEstacionados.html" title="Veiculos Estacionados"><img
+                            src="../menulateral/img/VeiculosEstacionados.png" id="imgveiculos" alt=""></a>
+                        
+                    </li>
+                </ul>
+                <a href="../Loguin/autenticacao.html" title="Sair" ><img src="../menulateral/img/sair.png" alt=""></a>
+            </nav>
+        </section>
+
+        <div id="conteudo">
+
+            <section class="ttbnt">
+                <div class="title_and_button"><h1>HISTÓRICO Veículos estacionados</h1></div>
+                  <div class="filtro_barra">
+
+                       <nav>
+                        <h2>Filtrar por:</h2><select name="" id="filtrarVeiculo">  <option id="filtro" value="">Todos</option>  </select>   
+                       </nav>
+                            
+                     <nav class="pesquisaVeiculo">
+                        <img src="img/search.png" alt="">
+                        <input type="search" placeholder="Placa..." id="filtplaca">
+                     </nav>
+                        
+                </div>
+            </section>
+
+            <section id="tableCrud_veiculo">
+               
+                    <table id="tblConsulta">
+                        <tr>
+                            <td id="tblTitulo" colspan="6">
+                                <td class="tblColunas destaque corModelo" > Modelo / Cor </td>
+                                <td class="tblColunas destaque tipocar"> Tipo </td>
+                                <td class="tblColunas destaque placaCar" > Placa </td>
+                                <td class="tblColunas destaque vagaCar"> Vaga </td>
+                                <td class="tblColunas destaque vagaCar"> entrada </td>
+                                <td class="tblColunas destaque acaoC"> Ações</td>
+                                
+                            </td>
+                        </tr>
+                    </table>
+
+                        <table id="Consulta">
+
+                        </table>
+                    
+            </section>
+
+    </main>
+
+    <div id="modal-conteiner" class="modal-conteiner">
+
+        <div id="modal-content" class="modal-content">
+
+            <span class="titlle_x"><h1>Detalhes</h1><img id="fechar" src="img/X.png" alt=""></span>
+   
+            <div class="containermodel">
+   
+                <div class="cliente">
+                     <span><h3>Cliente</h3></span>
+                         <div class="inputnome">
+                             <div class="inf_span"> 
+                                <span>Nome: </span><input type="text" id="nome" class="boardCar" readonly>
+                             
+                             </div>
+                             <div class="inf_span"> 
+                                <span>Telefone:</span><input type="text" id="telefone" class="boardCar" readonly>
+                             
+                             </div>   
+                          
+                         </div>
+
+                         <div class="inputtelefone">
+
+                         </div>
+                </div>
+
+                <div class="cliente">
+                    <span><h3>Veículo</h3></span>
+                        <div class="inputnome">
+                            <div class="inf_span"> 
+                               <span>Modelo: </span><input type="text" id="modelo" readonly>
+                            
+                            </div>
+                            <div class="inf_span"> 
+                               <span>Tipo:</span><input type="text" class="inputmenor" id="tipo" readonly>
+                            
+                            </div>   
+                            <div class="inf_span"> 
+                                <span>Placa:</span><input type="text"  class="inputmenor"  id="placa" readonly>
+                             
+                             </div>  
+                         
+                        </div>
+
+                        <div class="inputtelefone">
+
+                        </div>
+               </div>
+
+               <div class="cliente">
+                    <div class="inputnome">
+                        <div class="inf_span"> 
+                           <span>Entrada:</span><input type="text" id="entrada" readonly>
+                        
+                        </div>
+                        <div class="inf_span"> 
+                           <span>Saída:</span><input type="text" id="saida" readonly>
+                        </div>   
+                    </div>
+           </div>
+
+           <div class="cliente">     
+                <div class="inputnome">
+                    <div class="inf_span"> 
+                    <span>Valor pago:</span><input type="text" id="valor" readonly>
+                    </div>   
+                </div>
+                
+         </div>
+   
+        
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+</body>
+</html>

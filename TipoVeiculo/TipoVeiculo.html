@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/historicoPiso.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/Model.js" defer type="module"></script>
+    <script src="js/apiTipoVeiculo.js" defer type="module"></script>
+    <script src="js/app.js" defer type="module"></script>
+    <link rel="shortcut icon" href="../menulateral/img/logoFast.png" type="image/x-icon">
+    <title>Tipo de Veiculo</title>
+</head>
+<body>
+    
+    <main>
+        <section id="menuFt">
+            <nav>
+                <img id="logoFast" src="img/logoFast.png" alt="">
+                <ul>
+                    <li>
+                        <a href="../CadastramentoDeVagas/index.html" id="icon" title="Cadastramento de Vagas"><img
+                            src="../menulateral/img/seguro-de-automovel.png" alt=""></a>
+                    <a href="../CadastroCliente/cadastroCliente.html" title="Cadastramento de Clientes"><img
+                            src="../menulateral/img/CadastramentoCliente.png" alt=""></a>
+                    <a href="../Cores/Cores.html" title="Cores"><img src="../menulateral/img/cores.png" alt=""></a>
+                    <a href="../HistoricoVeículosestacionados/historico.html"
+                        title="Historico de Veiculos Estacionados"><img
+                            src="../menulateral/img/HistoricoVeiculos.png" alt=""></a>
+                    <a href="../Preco/preco.html" title="Cadastramento de preços"><img
+                            src="../menulateral/img/CadastramentoPreços.png" alt=""></a>
+                    <a href="../TipoVeiculo/TipoVeiculo.html" title="Tipo de Veiculo"><img
+                            src="../menulateral/img/TipoVeiculo.png" alt=""></a>
+                    <a href="../Veículosestacionados/VeiculosEstacionados.html" title="Veiculos Estacionados"><img
+                            src="../menulateral/img/VeiculosEstacionados.png" id="imgveiculos" alt=""></a>
+                        
+                    </li>
+                </ul>
+                <a href="../Loguin/autenticacao.html" title="Sair" ><img src="../menulateral/img/sair.png" alt=""></a>
+            </nav>
+        </section>
+
+        <div id="conteudo">
+
+            <section class="ttbnt">
+                <div class="title_and_button"><h1>TIPO DE VEÍCULO</h1><span id="submit-adicionar">Adicionar</span></div>
+                  <div class="filtro_barra">
+
+                       
+                            
+                     
+                        
+                </div>
+            </section>
+
+            <nav id="txtlistadestatus">
+                <h2>Lista de veículos:</h2>
+               </nav>
+
+            <section class="ttbnt">
+             
+                <table id="Consulta">
+        
+                    <tr id="tblLinhas">
+                        <td class="tblColunas destaque"> <h3>Tipo de veiculo:</h3>  </td>
+                        <td class="tblColunas registros acao"> <h3>Ações</h3> </td>
+                    </tr>
+                     </table>
+
+                     <table id="Consulta">
+
+                    </table>
+                   
+            
+            </section>
+        </div>
+
+        <div class="modal-conteiner" id="modal-conteiner">
+
+            <div class="conteudotodo" id="conteudotodo">
+                    
+                   <div class="topModal">
+                       <div>
+                        <h1>Novo status</h1>
+                        <span id="imgFechar">
+                            <img src="img/X.png" alt="">
+                        </span> 
+                    </div>
+                </div>
+                
+                  <div class="NomeStatus">
+                     <form id="formTipoV">
+                        <h2>Nome:</h2>
+                        <input type="text"  data-index="new" id="txtNome" class="txtNome" required>
+                        <input type="button" value="Adicionar" id="addd">
+                     </form>
+                  </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+</body>
+</html>

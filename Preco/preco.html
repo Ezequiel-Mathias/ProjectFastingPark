@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/preco.css">
+    <link rel="stylesheet" href="css/menuLateral.css">
+    <link rel="stylesheet" href="css/modelpreco.css">
+    <script src="js/main.js" defer type="module"></script>
+    <link rel="stylesheet" href="">
+    <link rel="shortcut icon" href="../menulateral/img/logoFast.png" type="image/x-icon">
+    <title>Valores</title>
+</head>
+<body>
+
+    <main>
+
+        <div id="modal-conteiner" class="modal-conteiner">
+
+           <div id="modal-content" class="modal-content">
+
+            <span class="titlle_x" id="titlle_x"><h1>Novo preço</h1><img src="img/X.png" alt=""></span>
+
+            <div class="containermodel">
+                <form id="form">
+                <span>Primeira hora:</span><input type="number" step="0.01" id="primeirahora" data-index="new"  class="boardCar" required>
+                <span>Demais horas: </span><input type="number" step="0.01" id="demaishoras" class="boardCar" >
+                <span>Tipo do veículo: </span>
+                <select name="" id="typeCar" >
+                    <option value="7">Moto</option>
+                    <option value="10">Van</option>
+                    <option value="11">Lancha</option>
+                    <option value="8">Carro</option>
+                </select>
+                </form> 
+                 <span id="btnAdd">Adicionar</span>
+
+            </div>
+           </div>
+           
+           
+        </div>
+
+        <section id="menuFt">
+            <nav>
+                <img id="logoFast" src="img/logoFast.png" alt="">
+                <ul>
+                    <li>
+                        
+                        <a href="../CadastramentoDeVagas/index.html" id="icon" title="Cadastramento de Vagas"><img
+                            src="../menulateral/img/seguro-de-automovel.png" alt=""></a>
+                    <a href="../CadastroCliente/cadastroCliente.html" title="Cadastramento de Clientes"><img
+                            src="../menulateral/img/CadastramentoCliente.png" alt=""></a>
+                    <a href="../Cores/Cores.html" title="Cores"><img src="../menulateral/img/cores.png" alt=""></a>
+                    <a href="../HistoricoVeículosestacionados/historico.html"
+                        title="Historico de Veiculos Estacionados"><img
+                            src="../menulateral/img/HistoricoVeiculos.png" alt=""></a>
+                    <a href="../Preco/preco.html" title="Cadastramento de preços"><img
+                            src="../menulateral/img/CadastramentoPreços.png" alt=""></a>
+                    <a href="../TipoVeiculo/TipoVeiculo.html" title="Tipo de Veiculo"><img
+                            src="../menulateral/img/TipoVeiculo.png" alt=""></a>
+                    <a href="../Veículosestacionados/VeiculosEstacionados.html" title="Veiculos Estacionados"><img
+                            src="../menulateral/img/VeiculosEstacionados.png" id="imgveiculos" alt=""></a>
+                        
+                    </li>
+                </ul>
+                <a href="../Loguin/autenticacao.html" title="Sair" ><img src="../menulateral/img/sair.png" alt=""></a>
+            </nav>
+        </section>
+
+        <div id="conteudo">
+
+            <section class="ttbnt">
+                <div class="title_and_button"><h1>PREÇOS</h1><span id="add">Adicionar</span></div>
+                  <div class="filtro_barra">
+
+                       <nav>
+                        <h2>Lista de preços:</h2>
+                       </nav>
+                            
+                  
+                        
+                </div>
+            </section>
+
+
+            <section class="ttbnt">
+
+                <table id="Consulta">
+                    <tr id="tblLinhas">
+                        <td class="tblColunas destaque"> <h3>Veículo</h3>  </td>
+                        <td class="tblColunas destaque"> <h3>Primeira hora</h3>  </td>
+                        <td class="tblColunas destaque"> <h3>Demais Horas</h3>  </td>
+                        <td class="tblColunas registros" id="acoes"> <h3>Ações</h3> </td>
+                    </tr>
+                </table>
+                <table id="tblConsulta" >
+                 
+                </table>
+               
+            </section>
+            
+
+        
+
+
+
+        </div>
+    </main>
+    
+</body>
+</html>

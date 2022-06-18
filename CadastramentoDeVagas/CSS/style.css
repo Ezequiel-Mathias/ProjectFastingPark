@@ -1,0 +1,184 @@
+*{  
+ font-family: 'Inter', sans-serif;
+ padding: 0;
+ box-sizing:border-box ;
+ margin: 0;
+}
+#menuFt nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+
+}
+
+
+#imgveiculos{
+    margin-bottom: 1000%;
+}
+
+main{
+    display: flex;
+}
+#txtVagas{
+    font-size: 50px;
+    margin-left: 270px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#statusvagasocupadas, #statusvagasdisponiveis{
+    margin-left: 40px;
+    margin-top: 110px;
+    font-size: 30px;
+}
+
+#statusvagasocupadas{
+    margin-right: -100px;
+}
+
+
+#divmaetitulosvagas{
+    display: flex;
+    margin-left: 20px;
+}
+
+#submit-adicionar{
+    width: 133px;
+    height: 60px;
+    background-color: transparent;
+    margin-left: 820px;
+    font-size: 25px;
+    margin-top: 200px;
+    margin-bottom: 180px;
+    cursor: pointer;
+    
+}
+#divmaeselectds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 310px;
+}
+
+/* .selectds{
+    margin-right: 110px;
+    height: 32px;
+    width: 210px;  
+    font-family: 'Inter', sans-serif; 
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+ */
+#vagasfooter{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    
+    margin-bottom: 70px;
+ 
+}
+
+
+#todas-as-vagas{
+    display: flex;
+    margin-left: 50px;
+
+}
+
+#statusvagasinativas{
+    font-size: 30px;
+}
+
+.disponiveis{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(65, 133, 65);
+    margin-top: 10px;
+    margin-left: 30px;
+    border: none;
+    padding-top: 25px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.ocupadas{
+    height: 70px;
+    width: 70px;
+    background-color: tomato;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: none;
+    padding-top: 25px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 10%;
+    text-align: center;
+}
+
+
+.indisponivel{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(212, 201, 47);
+    margin-top: 10px;
+    margin-left: 30px;
+    border: none;
+    padding-top: 25px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 10%;
+    text-align: center;
+}
+
+
+ #totaldevagasdisponiveis  {
+    height: 30px;
+    border: none;
+    font-size: 28px;
+    margin-top: 113px;
+    margin-left: 10px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#totaldevagasocupadas{
+    height: 30px;
+    border: none;
+    font-size: 28px;
+    margin-top: 113px;
+    background-color: transparent;
+    font-weight: bold;
+    margin-left: 110px;   
+}
+
+#totaldevagasinativas{
+    height: 30px;
+    border: none;
+    font-size: 28px;
+    margin-left: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    margin-top: 112px;
+   
+}
+
+#statusvagasinativas{
+    margin-top: 108px;
+}
+
+/* #corredortxt{
+    margin-top: -114px;
+    margin-left: 260px;
+} */
+
+
+

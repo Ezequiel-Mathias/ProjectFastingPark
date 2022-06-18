@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../menulateral/cssMenu/menuLateral.css">
+    <link rel="stylesheet" href="css/veiculo_E.css">
+    <link rel="stylesheet" href="css/modelVeiculo.css">
+    <link rel="shortcut icon" href="../menulateral/img/logoFast.png" type="image/x-icon">
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/ModalSaida.css">
+    <title>Veiculos Estacionados</title>
+</head>
+
+<body>
+
+    <main>
+
+
+        <section id="menuFt">
+            <nav>
+                <img id="logoFast" src="img/logoFast.png" alt="">
+                <ul>
+                    <li>
+                        <a href="../CadastramentoDeVagas/index.html" id="icon" title="Cadastramento de Vagas"><img
+                                src="../menulateral/img/seguro-de-automovel.png" alt=""></a>
+                        <a href="../CadastroCliente/cadastroCliente.html" title="Cadastramento de Clientes"><img
+                                src="../menulateral/img/CadastramentoCliente.png" alt=""></a>
+                        <a href="../Cores/Cores.html" title="Cores"><img src="../menulateral/img/cores.png" alt=""></a>
+                        <a href="../HistoricoVeículosestacionados/historico.html"
+                            title="Historico de Veiculos Estacionados"><img
+                                src="../menulateral/img/HistoricoVeiculos.png" alt=""></a>
+                        <a href="../Preco/preco.html" title="Cadastramento de preços"><img
+                                src="../menulateral/img/CadastramentoPreços.png" alt=""></a>
+                        <a href="../TipoVeiculo/TipoVeiculo.html" title="Tipo de Veiculo"><img
+                                src="../menulateral/img/TipoVeiculo.png" alt=""></a>
+                        <a href="../Veículosestacionados/VeiculosEstacionados.html" title="Veiculos Estacionados"><img
+                                src="../menulateral/img/VeiculosEstacionados.png" id="imgveiculos" alt=""></a>
+                    </li>
+                </ul>
+                <a href="../Loguin/autenticacao.html" title="Sair" ><img src="../menulateral/img/sair.png" alt=""></a>
+            </nav>
+        </section>
+
+
+
+        <!-- MODAL REGISTRAR SAIDA -->
+
+        <section id="modalVeiculo">
+
+            <div id="todamodel">
+
+                <span class="titlle_x">
+                    <h1>Detalhes</h1><img id="closemodal" src="img/X.png" alt="">
+                </span>
+
+                <div class="containermodel">
+
+                    <div class="cliente">
+                        <span>
+                            <h3>Cliente</h3>
+                        </span>
+                        <form id="form">
+                            <div class="inputnome">
+                                <div class="inf_span">
+                                    <span>Nome:</span><input type="text" id="nome" class="modal-field" readonly>
+
+                                </div>
+                                <div class="inf_span">
+                                    <span>Telefone:</span><input type="text" id="telefone" class="modal-field"
+                                        readonly />
+
+                                </div>
+
+                            </div>
+
+                            <div class="inputtelefone">
+
+                            </div>
+                    </div>
+
+                    <div class="cliente">
+                        <span>
+                            <h3>Veículo</h3>
+                        </span>
+                        <div class="inputnome">
+                            <div class="inf_span">
+                                <span>Modelo: </span><input type="text" id="modelo" class="modal-field">
+
+                            </div>
+                            <div class="inf_span">
+                                <span>Tipo:</span><input type="text" class="modal-field" id="tipo" readonly>
+
+                            </div>
+                            <div class="inf_span">
+                                <span>Placa:</span><input type="text" data-="a" class="modal-field" id="placa" readonly>
+
+                            </div>
+
+                        </div>
+
+                        <div class="inputtelefone">
+
+                        </div>
+                    </div>
+
+                    <div class="cliente">
+                        <div class="inputnome">
+                            <div class="inf_span">
+                                <span>Entrada:</span><input type="text" class="modal-field" id="entrada" readonly>
+
+                            </div>
+                            <div class="inf_span">
+                                <span>Vaga:</span><input type="text" class="modal-field" id="vaga" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </form>
+
+                    <input type="button" value="Registrar saida" id="registrarsaida">
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- MODAL TICKET -->
+
+        <section class="containerModel_saida" id="containerModel_saida">
+            <div id="todamodelsaida">
+                <span id="fecharticket"><img src="img/X.png" alt=""></span>
+
+                <div id="checkEntrada">
+                    <div class="content">
+
+                        <h1>Fast parking</h1>
+                        <h3 id="txt-tcketsaida"> Ticket Saida </h3>
+
+
+                        <div class="vagamodal_entrada">
+                            <p>Nome:</p> <input type="text" id="nometicket" class="modal-ticket" readonly>
+
+
+                            <p>Telefone:</p> <input type="text" id="telefoneticket" class="modal-ticket" readonly>
+
+                            <p>Placa:</p> <input type="text" id="placaticket" class="modal-ticket" readonly>
+
+                            <p>Vaga:</p> <input type="text" id="vagaticket" class="modal-ticket" readonly>
+
+                            <p>Codigo:</p> <input type="text" id="codigoticket" class="modal-ticket" readonly>
+                            <span>
+                                <p> Fabricante:</p> <input type="text" id="Fabricanteticket" class="modal-ticket"
+                                    readonly>
+
+                                <p> Tipo: </p> <input type="text" id="tipoticket" class="modal-ticket" readonly>
+
+                                <p>Modelo:</p> <input type="text" id="modeloticket" class="modal-ticket" readonly>
+
+                                <p>Horario de entrada:</p> <input type="text" id="entradaticket" class="modal-ticket"
+                                    readonly>
+
+                                <p>Data de entrada:</p> <input type="text" id="dataentradaticket" class="modal-ticket"
+                                    readonly>
+
+                                <p>Total a Pagar:</p> <input type="text" id="totalapagarticket" class="modal-ticket"
+                                    readonly>
+
+                            </span>
+                        </div>
+                        <p id="Entrada_model">Saida - <input type="text" id="datasaida" class="modal-ticket" readonly> -
+                            <input type="text" id="horariosaida" class="modal-ticket" readonly>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!-- PARTE DO CONTEUDO -->
+
+        <div id="conteudo">
+
+            <section class="ttbnt">
+                <div class="title_and_button">
+                    <h1>Veículos estacionados</h1>
+                </div>
+                <div class="filtro_barra">
+
+                    <nav>
+                        <h2>Filtrar por:</h2>
+                        <select name="" id="filtrarVeiculo">
+
+
+                        </select>
+                    </nav>
+
+                    <nav class="pesquisaVeiculo">
+                        <img src="img/search.png" alt="" id="lupadepesquisa">
+                        <input id='pesquisarplaca' type="search" placeholder="Placa...">
+                    </nav>
+
+                </div>
+            </section>
+
+            <section id="tableCrud_veiculo">
+
+                <table id="tblConsulta">
+                    <tr>
+                        <td id="tblTitulo">
+                        <td class="tblColunas destaque corModelo"> Modelo</td>
+                        <td class="tblColunas destaque tipocar"> Tipo </td>
+                        <td class="tblColunas destaque placaCar"> Placa </td>
+                        <td class="tblColunas destaque vagaCar"> Vaga </td>
+                        <td class="tblColunas destaque acaoC"> Ações</td>
+                        </td>
+
+                    </tr>
+                </table>
+
+                <table id="Consulta">
+
+                </table>
+
+            </section>
+
+
+            </section>
+
+
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

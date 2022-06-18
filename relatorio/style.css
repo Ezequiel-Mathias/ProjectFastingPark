@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+
+main.container {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+main span{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    
+}
+
+main span img {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+main span a{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+}
+
+
+/**************************/
+main span h1 {
+    width: 90%;
+    height: 100%;
+
+    text-align: left;
+    
+    padding-left: 60px;
+    padding-top: 20px;
+
+    margin-bottom: 40px;
+}
+
+.report-container {
+    width: 100%;
+    margin: auto;
+
+    padding: 0px 30px;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.report {
+    flex: 3 0 0;
+    height: 80vh;
+
+    padding: 15px;
+    overflow: hidden;
+
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.report div {
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+.report div::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+
+
+.report h2 {
+    margin-bottom: 20px;
+}
+
+.report table {
+    width: 100%;
+
+    text-align: center;
+}
+
+.report table thead tr th{
+    color: #fff;
+
+    width: 50%;
+
+    padding: 10px 5px;
+    background-color: #222;
+}
+
+.report table tbody tr td {
+    padding: 5px 0px;
+}
+
+.report table tbody tr:nth-of-type(odd) td{
+    background-color: #c3c3c3;
+}

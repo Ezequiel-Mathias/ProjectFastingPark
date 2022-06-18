@@ -1,0 +1,48 @@
+
+header{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+
+#txt-novaga-model{
+    margin-top: -510px;
+}
+#selecao{
+justify-content: center;
+align-items: center;
+display: grid;
+margin-right: 300px;
+}
+
+#status-model{
+    margin-bottom: 10px;
+}
+#status-automovel{
+    margin-top: 28px;
+}
+
+
+.select-setor{
+    position: absolute;
+    left: 45em;
+    top: 25em;
+    font-family: 'Inter', sans-serif; 
+    font-size: 20px;
+    padding-left: 10px;
+    height: 32px;
+    width: 210px;
+}
+
+.select-statusvaga{
+    position: absolute;
+    left: 45em;
+    top: 23em;
+    font-family: 'Inter', sans-serif; 
+    font-size: 20px;
+    padding-left: 10px;
+    height: 32px;
+    width: 270px;
+}
+
